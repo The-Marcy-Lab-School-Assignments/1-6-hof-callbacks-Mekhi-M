@@ -135,21 +135,21 @@ const sortUsersByOrder = (arr) => {
 
 // tests
 
-const users = [
-  { name: "Alice", order: 1 },
-  { name: "Bob", order: 3 },
-  { name: "Charlie", order: 2 },
-  { name: "Debbie", order: 4 },
-];
+// const users = [
+//   { name: "Alice", order: 1 },
+//   { name: "Bob", order: 3 },
+//   { name: "Charlie", order: 2 },
+//   { name: "Debbie", order: 4 },
+// ];
 
-const sortedUsers = sortUsersByOrder(users);
+// const sortedUsers = sortUsersByOrder(users);
 // console.log(sortedUsers);
-// [
-//   { name: 'Alice', order: 1 },
-//   { name: 'Charlie', order: 2 },
-//   { name: 'Bob', order: 3 },
-//   { name: 'Debbie', order: 4 },
-// ]
+// // [
+// //   { name: 'Alice', order: 1 },
+// //   { name: 'Charlie', order: 2 },
+// //   { name: 'Bob', order: 3 },
+// //   { name: 'Debbie', order: 4 },
+// // ]
 
 const sortUsersByName = (arr) => {
   let sortingArr = [...structuredClone(arr)];
@@ -176,14 +176,21 @@ const sortUsersByName = (arr) => {
 
 // tests
 
-const resortedUsers = sortUsersByName(sortedUsers);
-console.log(resortedUsers);
+const users2 = [
+  { name: "Alice", order: 1 },
+  { name: "Charlie", order: 2 },
+  { name: "Bob", order: 3 },
+  { name: "Debbie", order: 4 },
+];
+
+const sortedUsers2 = sortUsersByName(users2);
+console.log(sortedUsers2);
 // [
-//   { name: "Alice", order: 1 },
-//   { name: "Bob", order: 3 },
-//   { name: "Charlie", order: 2 },
-//   { name: "Debbie", order: 4 },
-// ];
+//   { name: 'Alice', order: 1 },
+//   { name: 'Bob', order: 3 },
+//   { name: 'Charlie', order: 2 },
+//   { name: 'Debbie', order: 4 },
+// ]
 
 module.exports = {
   myForEach,
